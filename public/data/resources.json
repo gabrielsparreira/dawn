@@ -1,0 +1,46 @@
+[
+    {
+      "id": "food",
+      "name": "Food",
+      "description": "Food is essential for your population's survival.",
+      "initialQuantity": 0,
+      "initialMaxStorage": 200,
+      "initialProductionPerSecond": 0,
+      "spilloverMod": 0.8
+    },
+    {
+      "id": "materials",
+      "name": "Materials",
+      "description": "Materials are used to build structures and craft items.",
+      "initialQuantity": 0,
+      "initialMaxStorage": 300,
+      "initialProductionPerSecond": 0,
+      "spilloverMod": 0.6
+    },
+    {
+      "id": "luxuries",
+      "name": "Luxuries",
+      "description": "Luxuries increase your population's happiness and well-being.",
+      "initialQuantity": 0,
+      "initialMaxStorage": 100,
+      "initialProductionPerSecond": 0,
+      "spilloverMod": 0.4
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "description": "Science is used to research new technologies and improve your civilization.",
+      "initialQuantity": 0,
+      "initialMaxStorage": 0,
+      "initialProductionPerSecond": 0,
+      "spilloverMod": 0
+    },
+    {
+        "id": "population",
+        "name": "Population",
+        "description": "Population represents the number of people in your civilization. It is crucial for workforce and growth, but can cause issues if it exceeds your capacity.",
+        "initialQuantity": 0,
+        "initialMaxStorage": 0
+    }
+  ]
+  

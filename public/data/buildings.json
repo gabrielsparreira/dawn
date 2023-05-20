@@ -1,0 +1,45 @@
+[
+    {
+      "id": "farm",
+      "name": "Farm",
+      "description": "Farms are essential for food production to support your growing population.",
+      "popValue": 5,
+      "initialQuantity": 0,
+      "initialCost": [50, 20, 0, 0],
+      "prerequisites": [],
+      "foodProduction": 2,
+      "materialsProduction": 0,
+      "luxuriesProduction": 0,
+      "scienceProduction": 0,
+      "military": 0
+    },
+    {
+      "id": "lumberMill",
+      "name": "Lumber Mill",
+      "description": "Lumber Mills are used to process wood, increasing your materials production.",
+      "popValue": 2,
+      "initialQuantity": 0,
+      "initialCost": [100, 50, 0, 0],
+      "prerequisites": [],
+      "foodProduction": 0,
+      "materialsProduction": 2,
+      "luxuriesProduction": 0,
+      "scienceProduction": 0,
+      "military": 0
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "description": "Libraries are crucial for research and help boost your civilization's scientific progress.",
+      "popValue": 1,
+      "initialQuantity": 0,
+      "initialCost": [200, 100, 50, 0],
+      "prerequisites": [],
+      "foodProduction": 0,
+      "materialsProduction": 0,
+      "luxuriesProduction": 0,
+      "scienceProduction": 5,
+      "military": 0
+    }
+  ]
+  

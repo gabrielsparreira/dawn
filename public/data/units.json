@@ -1,0 +1,45 @@
+[
+    {
+      "id": "worker",
+      "name": "Worker",
+      "description": "Workers are versatile units that can help with various tasks such as food and material production.",
+      "initialQuantity": 0,
+      "popCount": 1,
+      "initialCost": [10, 5, 0, 0],
+      "prerequisite": "",
+      "foodProduction": 1,
+      "materialsProduction": 1,
+      "luxuriesProduction": 0.05,
+      "scienceProduction": 0,
+      "military": 0
+    },
+    {
+      "id": "scientist",
+      "name": "Scientist",
+      "description": "Scientists are focused on research and contribute to your civilization's scientific progress.",
+      "initialQuantity": 0,
+      "popCount": 1,
+      "initialCost": [20, 10, 5, 0],
+      "prerequisite": "library",
+      "foodProduction": 0,
+      "materialsProduction": 0,
+      "luxuriesProduction": 0,
+      "scienceProduction": 1,
+      "military": 0
+    },
+    {
+      "id": "soldier",
+      "name": "Soldier",
+      "description": "Soldiers are your civilization's defenders and can protect your territory from external threats.",
+      "initialQuantity": 0,
+      "popCount": 1,
+      "initialCost": [30, 15, 0, 0],
+      "prerequisite": "",
+      "foodProduction": 0,
+      "materialsProduction": 0,
+      "luxuriesProduction": 0,
+      "scienceProduction": 0,
+      "military": 10
+    }
+  ]
+  
