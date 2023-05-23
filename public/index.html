@@ -13,42 +13,67 @@
       <header>
         <h1>Dawn: Civilization Clicker</h1>
         <div id="user-options">User Options</div>
-        <div id="resources">Resources</div>
       </header>
 
+      <div id="resources">
+        <div id="food-container">
+          Food
+        </div>
+        <div id="materials-container">
+          Materials
+        </div>
+        <div id="luxuries-container">
+          Luxuries
+        </div>
+        <div id="science-container">
+          Science
+        </div>
+        <div id="population-container">
+          Population
+        </div>
+      </div>
+
       <main>
-        <div id="left-column">
+        <div id="left-column" class="column">
+          Leftmost Column
+        </div>
+          
+        <div id="left-info" class="column">
           <div id="units-view">
             <h2>Units</h2>
           </div>
-        
+          
           <div id="buildings-view" style="display: none;">
             <h2>Buildings</h2>
           </div>
-        
+          
           <div id="wonders-view" style="display: none;">
             <h2>Wonders</h2>
           </div>
         </div>
-
-        <div id="center-column">
-            <button id="resource-button">Gather Resources</button>
-            <img id="game-progress" src="" alt="Game progress">
-            <div id="military-interactions">Military Interactions</div>
+          
+        <div id="center-column" class="column">
+          <button id="resource-button">Gather Resources</button>
+          <img id="game-progress" src="" alt="Game progress">
+          <div id="military-interactions">Military Interactions</div>
         </div>
-
-        <div id="right-column">
+    
+        <div id="right-info" class="column">
           <div id="research-view">
             <h2>Research</h2>
           </div>
-        
+            
           <div id="upgrades-view" style="display: none;">
             <h2>Upgrades</h2>
           </div>
-        
+            
           <div id="archeology-view" style="display: none;">
             <h2>Archeology</h2>
           </div>
+        </div>
+
+        <div id="right-column" class="column">
+          Rightmost Column
         </div>
       </main>
 
