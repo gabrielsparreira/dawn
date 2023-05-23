@@ -25,5 +25,17 @@ function createButtons(data, callback, targetDivId) {
     });
 }
 
+function switchView(viewId, column) {
+    // Get an array of all view divs
+    const views = document.querySelectorAll(`#${column}-column div`);
+    
+    // Hide all view divs
+    views.forEach(view => view.style.display = 'none');
+  
+    // Show the selected view
+    document.getElementById(viewId).style.display = 'block';
+}
+  
 
-export { createButtons };
+
+export { createButtons, switchView };
