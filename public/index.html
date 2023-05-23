@@ -9,47 +9,53 @@
 </head>
 <body>
     <div id="game-container">
-        <!-- other game elements -->
-        <div id="header">
-        </div>
-        <div id="body">
-          <div id="resource-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Resource</th>
-                  <th>Quantity</th>
-                  <th>Production per second</th>
-                  <th>Population info</th>
-                </tr>
-              </thead>
-              <tbody id="resourceTableBody">
-                <!-- The resource rows will be added here dynamically -->
-              </tbody>
-          </table>
-          </div>
-        </div>
-        <div id="footer">
+
+      <header>
+        <div id="resources">Resources</div>
+        <div id="user-options">User Options</div>
+        <h1>Dawn: Civilization Clicker</h1>
+      </header>
+
+      <main>
+        <div id="left-column">
+            <h2>Units, Buildings and Wonders</h2>
         </div>
 
-        <!--
-        <div>
-          <button id="buyUnitButton-worker">Buy Worker</button>
-          <button id="sellUnitButton-worker">Sell Worker</button>
-          <button id="buyUnitButton-scientist">Buy Scientist</button>
-          <button id="sellUnitButton-scientist">Sell Scientist</button>
-          <button id="buyUnitButton-soldier">Buy Soldier</button>
-          <button id="sellUnitButton-soldier">Sell Soldier</button>
-          <button id="buyBuildingButton-farm">Buy Farm</button>
-          <button id="sellBuildingButton-farm">Sell Farm</button>
-          <button id="buyBuildingButton-lumberMill">Buy Lumbermill</button>
-          <button id="sellBuildingButton-lumberM'ill">Sell Lumbermill</button>
-          <button id="buyBuildingButton-library">Buy Library</button>
-          <button id="sellBuildingButton-library">Sell Library</button>
+        <div id="center-column">
+            <button id="resource-button">Gather Resources</button>
+            <img id="game-progress" src="" alt="Game progress">
+            <div id="military-interactions">Military Interactions</div>
         </div>
-        -->
-    
-        <button id="resource-button">Gather Resources</button>
+
+        <div id="right-column">
+            <h2>Research, Upgrades and Archeology</h2>
+        </div>
+      </main>
+
+      <div id="body">
+        <div id="resource-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Resource</th>
+                <th>Quantity</th>
+                <th>Production per second</th>
+                <th>Population info</th>
+              </tr>
+            </thead>
+            <tbody id="resourceTableBody">
+                <!-- The resource rows will be added here dynamically -->
+            </tbody>
+        </table>
+        </div>
+      </div>
+
+      <footer>
+        <div id="project-info">Project Info</div>
+        <div id="links">Useful Links</div>
+        <button id="save-button">Save</button>
+        <button id="load-button">Load</button>
+      </footer>  
     </div>
 
     <script type="module" src="js/main.js"></script>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#resources, #user-options {
+    flex: 1;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#left-column, #center-column, #right-column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+#project-info, #links {
+    flex: 1;
+}
