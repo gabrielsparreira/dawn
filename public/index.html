@@ -9,8 +9,77 @@
 </head>
 <body>
     <div id="game-container">
-        <!-- other game elements -->
-        <table>
+
+      <header>
+        <h1>Dawn: Civilization Clicker</h1>
+        <div id="user-options">User Options</div>
+      </header>
+
+      <div id="resources">
+        <div id="food-container">
+          Food
+        </div>
+        <div id="materials-container">
+          Materials
+        </div>
+        <div id="luxuries-container">
+          Luxuries
+        </div>
+        <div id="science-container">
+          Science
+        </div>
+        <div id="population-container">
+          Population
+        </div>
+      </div>
+
+      <main>
+        <div id="left-column" class="column">
+          Leftmost Column
+        </div>
+          
+        <div id="left-info" class="column">
+          <div id="units-view">
+            <h2>Units</h2>
+          </div>
+          
+          <div id="buildings-view" style="display: none;">
+            <h2>Buildings</h2>
+          </div>
+          
+          <div id="wonders-view" style="display: none;">
+            <h2>Wonders</h2>
+          </div>
+        </div>
+          
+        <div id="center-column" class="column">
+          <button id="resource-button">Gather Resources</button>
+          <img id="game-progress" src="" alt="Game progress">
+          <div id="military-interactions">Military Interactions</div>
+        </div>
+    
+        <div id="right-info" class="column">
+          <div id="research-view">
+            <h2>Research</h2>
+          </div>
+            
+          <div id="upgrades-view" style="display: none;">
+            <h2>Upgrades</h2>
+          </div>
+            
+          <div id="archeology-view" style="display: none;">
+            <h2>Archeology</h2>
+          </div>
+        </div>
+
+        <div id="right-column" class="column">
+          Rightmost Column
+        </div>
+      </main>
+
+      <div id="body">
+        <div id="resource-table">
+          <table>
             <thead>
               <tr>
                 <th>Resource</th>
@@ -20,28 +89,18 @@
               </tr>
             </thead>
             <tbody id="resourceTableBody">
-              <!-- The resource rows will be added here dynamically -->
+                <!-- The resource rows will be added here dynamically -->
             </tbody>
         </table>
-
-        <!--
-        <div>
-          <button id="buyUnitButton-worker">Buy Worker</button>
-          <button id="sellUnitButton-worker">Sell Worker</button>
-          <button id="buyUnitButton-scientist">Buy Scientist</button>
-          <button id="sellUnitButton-scientist">Sell Scientist</button>
-          <button id="buyUnitButton-soldier">Buy Soldier</button>
-          <button id="sellUnitButton-soldier">Sell Soldier</button>
-          <button id="buyBuildingButton-farm">Buy Farm</button>
-          <button id="sellBuildingButton-farm">Sell Farm</button>
-          <button id="buyBuildingButton-lumberMill">Buy Lumbermill</button>
-          <button id="sellBuildingButton-lumberM'ill">Sell Lumbermill</button>
-          <button id="buyBuildingButton-library">Buy Library</button>
-          <button id="sellBuildingButton-library">Sell Library</button>
         </div>
-        -->
-    
-        <button id="resource-button">Gather Resources</button>
+      </div>
+
+      <footer>
+        <div id="project-info">Project Info</div>
+        <div id="links">Useful Links</div>
+        <button id="save-button">Save</button>
+        <button id="load-button">Load</button>
+      </footer>  
     </div>
 
     <script type="module" src="js/main.js"></script>
