@@ -1,5 +1,5 @@
 import Game from './game.js';
-import { createButtons } from './DOM.js';
+import { createButtons, switchView, updateResourceTable } from './DOM.js';
 
 
 const targetFPS = 60;
@@ -23,7 +23,7 @@ Game.createGame().then(game => {
   }
 
   //Constructing the DOM
-  createButtons(game.units, (id, action) => {}, "game-container");
+  createButtons(game.units, (id, action) => {}, "units-view");
     
   if (!eventsInitialized) {
     const resourceButton = document.getElementById('resource-button');
@@ -81,62 +81,7 @@ Game.createGame().then(game => {
     });
     eventsInitialized = true;
   }
-    
-  
-    // Updating resource table
-    function updateResourceTable(game) {
-      const tableBody = document.getElementById('resourceTableBody');
-    
-      // Clear the table body
-      tableBody.innerHTML = '';
-    
-      // Add a row for each resource
-      for (const resourceKey in game.resources) {
-        const resource = game.resources[resourceKey];
-    
-        // Skip the population resource for this loop
-        if (resourceKey === 'population') continue;
-    
-        const row = document.createElement('tr');
-    
-        const nameCell = document.createElement('td');
-        nameCell.innerText = resource.name;
-        row.appendChild(nameCell);
-    
-        const quantityCell = document.createElement('td');
-        quantityCell.innerText = Math.floor(resource.quantity);
-        row.appendChild(quantityCell);
-    
-        const productionCell = document.createElement('td');
-        productionCell.innerText = resource.getProductionPerSecond().toFixed(2);
-        row.appendChild(productionCell);
-    
-        tableBody.appendChild(row);
-      }
-    
-      // Add a row for the population resource
-      const population = game.resources.population;
-      const populationRow = document.createElement('tr');
-    
-      const nameCell = document.createElement('td');
-      nameCell.innerText = population.name;
-      populationRow.appendChild(nameCell);
-    
-      const quantityCell = document.createElement('td');
-      quantityCell.innerText = `${population.quantity}/${population.maxStorage}`;
-      populationRow.appendChild(quantityCell);
-    
-      const debuffCell = document.createElement('td');
-      if (population.quantity > population.maxStorage) {
-        debuffCell.innerText = 'Debuff active';
-      } else {
-        debuffCell.innerText = 'No debuff';
-      }
-      populationRow.appendChild(debuffCell);
-    
-      tableBody.appendChild(populationRow);
-  }
-    
+
   // Start the game loop
   gameLoop();
   //console.log("Game instance:", game);
