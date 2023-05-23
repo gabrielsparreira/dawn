@@ -28,34 +28,34 @@ Game.createGame().then(game => {
   if (!eventsInitialized) {
     const resourceButton = document.getElementById('resource-button');
   
-  resourceButton.addEventListener('click', () => {
-    // Call the gatherResources method
-    game.clicker.gatherResources(game.resources);
-    updateResourceTable(game);
-  });
+    resourceButton.addEventListener('click', () => {
+      // Call the gatherResources method
+      game.clicker.gatherResources(game.resources);
+      updateResourceTable(game);
+    });
   
-  // Add event listeners for each unit
-  game.units.forEach(unit => {
-    const unitId = unit.id;
-    const buyUnitButton = document.getElementById(`buyUnitButton-${unitId}`);
-    const sellUnitButton = document.getElementById(`sellUnitButton-${unitId}`);
-  
-    if (buyUnitButton) {
-      buyUnitButton.addEventListener('click', () => {
-        game.buyUnit(unitId);
-      });
-    } else {
-      console.warn(`Buy button not found for unit with ID: ${unitId}`);
-    }
-  
-    if (sellUnitButton) {
-      sellUnitButton.addEventListener('click', () => {
-        game.sellUnit(unitId);
-      });
-    } else {
-      console.warn(`Sell button not found for unit with ID: ${unitId}`);
-    }
-  });  
+    // Add event listeners for each unit
+    game.units.forEach(unit => {
+      const unitId = unit.id;
+      const buyUnitButton = document.getElementById(`buyUnitButton-${unitId}`);
+      const sellUnitButton = document.getElementById(`sellUnitButton-${unitId}`);
+    
+      if (buyUnitButton) {
+        buyUnitButton.addEventListener('click', () => {
+          game.buyUnit(unitId);
+        });
+      } else {
+        console.warn(`Buy button not found for unit with ID: ${unitId}`);
+      }
+    
+      if (sellUnitButton) {
+        sellUnitButton.addEventListener('click', () => {
+          game.sellUnit(unitId);
+        });
+      } else {
+        console.warn(`Sell button not found for unit with ID: ${unitId}`);
+      }
+    });  
     
     // Add event listeners for each building
     game.buildings.forEach(building => {
